@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #FFFEF8;
 }
 ol, ul {
 	list-style: none;
@@ -53,6 +54,7 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -92,12 +94,28 @@ nav ul {
 }
 nav li {
 	padding: 0 10px;
-	font-size: 1.2em;
+	font-weight: 400;
 }
 
 li:hover {
 	color: #B1663C;
 }
+
+a {
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+nav li a:hover {
+	color: #B1663C;
+}
+
+.icon {
+	height: 22px;
+}
+
+
 #introduction {
 	display: flex;
 	align-items: center;
@@ -120,7 +138,10 @@ li:hover {
 
 #introduction p {
 	margin-bottom: 0.5em;
+	width: 70%;
+	font-weight: 400;
 }
+
 #portfolio h2 {
 	text-align: center;
 	margin-bottom: 1em;
@@ -183,7 +204,11 @@ input[type="submit"]{
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
-	margin: 2em
+	padding: 20px 0;
+}
+
+footer {
+	background-color: white;
 }
 
 /* Les filtres */
@@ -192,21 +217,7 @@ footer nav ul {
 	height: 37px;
 	display: flex;
 	margin-bottom: 50px;
-	justify-content: center
-}
-
-.filter-active {
-	font-family: 'Syne';
-	font-weight: 700;
-	font-size: 16px;
-	color: white;
-	background-color: #1D6154;
-	margin: 0 5px;
-	padding: 0 15px;
-	border-radius: 60px;
-	font-style: normal;
-	box-shadow: 0 none;
-	border: solid 1px #1D6154;
+	justify-content: center;
 }
 
 .filter {
@@ -221,6 +232,11 @@ footer nav ul {
 	font-style: normal;
 	box-shadow: 0 none;
 	border: solid 1px #1D6154;
+}
+
+.active {
+	color: white;
+	background-color: #1D6154;
 }
 
 
